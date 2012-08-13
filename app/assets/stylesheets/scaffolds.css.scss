@@ -1,0 +1,95 @@
+.center {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.justify {
+    float: none;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+body {
+    color: #FFF;
+    font-family: 'Arimo', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.highlight {
+    font-style: italic;
+    color: #BBB;
+}
+
+.bottom-large-spacer {
+    padding-bottom: 60px;
+}
+
+.bottom-med-spacer {
+    padding-bottom: 40px;
+}
+
+.bottom-small-spacer {
+    padding-bottom: 20px;
+}
+
+.top-small-spacer {
+    padding-top: 20px;
+}
+
+.top-med-spacer {
+    padding-top: 40px;
+}
+
+.top-large-spacer {
+    padding-top: 60px;
+}
+
+
+
+.ko-op {
+    background-color: white;
+}
+
+.ko-op p {
+    color: black;
+}
+
+.ko-op .right-col {
+    text-align:right;
+}
+
+.red-rover {
+    background-color: black;
+    background-image: url('starbg.png');
+}
+
+.red-rover .logo {
+    margin-top: 60px;
+}
+
+.red-rover .right-col {
+    text-align:right;
+}
+
+
+.skipping-stones {
+    background-color: #400080;
+}
+
+.skipping-stones .logo {
+    margin-top: 113px;
+}
+
+.skipping-stones .right-col {
+    text-align:right;
+}
+
+.project-container {
+    padding-left:10px;
+    padding-right:10px;
+}
