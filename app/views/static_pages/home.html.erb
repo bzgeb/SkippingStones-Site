@@ -1,2 +1,58 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Skipping Stones | Home') %>
+<!-- Logo -->
+<div class="row bottom-large-spacer top-large-spacer">
+    <div class="span12 center">
+        <%= image_tag("skipping-stones.png") %>
+    </div>
+</div>
+
+<!-- Social -->
+<!-- Desktop -->
+<div class="row bottom-large-spacer hidden-phone">
+    <div class="span12 center">
+        <div class="row">
+            <div class="span4">
+                <%= image_tag("twitter.png") %>
+            </div>
+            <div class="span4">
+                <%= image_tag("ko-op.png") %>
+            </div>
+            <div class="span4">
+                <%= image_tag("fb.png") %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phone -->
+<div class="row bottom-large-spacer visible-phone">
+    <div class="span12 center">
+        <%= image_tag("twitter.png", :width=>"35px") %>
+        <%= image_tag("ko-op.png", :width=>"35px", :style=>"margin-left:60px;margin-right:60px") %>
+        <%= image_tag("fb.png", :width=>"35px") %>
+    </div>
+</div>
+
+
+<!-- Stones -->
+<div class="row bottom-med-spacer">
+    <div class="span7 center">
+        <%= image_tag("stones.png") %>
+    </div>
+</div>
+
+<!-- Text -->
+<div class-"row">
+    <div class="span10 offset1">
+        <p>Skipping Stones is an experimental sound and poetry toy. Players throw stones across a lake and create musical harmonies with each skip of the stone. The game is a study of self reflection, and emotion through turbulent times. Coming soon to iOS.</p>
+        <p>Sound composition by Mars Module. Click below to listen to the Skipping Stones EP.</p>
+    </div>
+</div>
+
+<!-- Mars Module -->
+<div class="row">
+    <div class="span12">
+        <%= image_tag("mars-module.png") %>
+    </div>
+</div>
+
