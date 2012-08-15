@@ -38,58 +38,58 @@
 <!-- Desktop -->
 <div class="row hidden-phone">
     <div class="span12 center">
-        <%= image_tag("Slice-1.png") %>
-        <%= image_tag("Slice-2.png") %>
-        <%= image_tag("Slice-3.png") %>
-        <%= image_tag("Slice-4.png") %>
-        <%= image_tag("Slice-5.png") %>
+        <%= image_tag("Slice-1.png", :"data-sound"=>"sound1", :class=>"stone") %>
+        <%= image_tag("Slice-2.png", :"data-sound"=>"sound2", :class=>"stone") %>
+        <%= image_tag("Slice-3.png", :"data-sound"=>"sound3", :class=>"stone") %>
+        <%= image_tag("Slice-4.png", :"data-sound"=>"sound4", :class=>"stone") %>
+        <%= image_tag("Slice-5.png", :"data-sound"=>"sound5", :class=>"stone") %>
     </div>
 </div>
 <div class="row hidden-phone">
     <div class="span12 center">
-        <%= image_tag("Slice-6.png") %>
-        <%= image_tag("Slice-7.png") %>
-        <%= image_tag("Slice-8.png") %>
-        <%= image_tag("Slice-9.png") %>
-        <%= image_tag("Slice-10.png") %>
+        <%= image_tag("Slice-6.png",  :"data-sound"=>"sound6",  :class=>"stone") %>
+        <%= image_tag("Slice-7.png",  :"data-sound"=>"sound7",  :class=>"stone") %>
+        <%= image_tag("Slice-8.png",  :"data-sound"=>"sound8",  :class=>"stone") %>
+        <%= image_tag("Slice-9.png",  :"data-sound"=>"sound9",  :class=>"stone") %>
+        <%= image_tag("Slice-10.png", :"data-sound"=>"sound10", :class=>"stone") %>
     </div>
 </div>
 <div class="row hidden-phone bottom-med-spacer">
     <div class="span12 center">
-        <%= image_tag("Slice-11.png") %>
-        <%= image_tag("Slice-12.png") %>
-        <%= image_tag("Slice-13.png") %>
-        <%= image_tag("Slice-14.png") %>
-        <%= image_tag("Slice-15.png") %>
+        <%= image_tag("Slice-11.png", :"data-sound"=>"sound11", :class=>"stone") %>
+        <%= image_tag("Slice-12.png", :"data-sound"=>"sound12", :class=>"stone") %>
+        <%= image_tag("Slice-13.png", :"data-sound"=>"sound13", :class=>"stone") %>
+        <%= image_tag("Slice-14.png", :"data-sound"=>"sound14", :class=>"stone") %>
+        <%= image_tag("Slice-15.png", :"data-sound"=>"sound15", :class=>"stone") %>
     </div>
 </div>
 
 <!-- Phone -->
 <div class="row visible-phone">
     <div class="span7 center">
-        <%= image_tag("Slice-1.png", :width=>"50px") %>
-        <%= image_tag("Slice-2.png", :width=>"50px") %>
-        <%= image_tag("Slice-3.png", :width=>"50px") %>
-        <%= image_tag("Slice-4.png", :width=>"50px") %>
-        <%= image_tag("Slice-5.png", :width=>"50px") %>
+        <%= image_tag("Slice-1.png", :width=>"50px", :"data-sound"=>"sound1", :class=>"stone") %>
+        <%= image_tag("Slice-2.png", :width=>"50px", :"data-sound"=>"sound2", :class=>"stone") %>
+        <%= image_tag("Slice-3.png", :width=>"50px", :"data-sound"=>"sound3", :class=>"stone") %>
+        <%= image_tag("Slice-4.png", :width=>"50px", :"data-sound"=>"sound4", :class=>"stone") %>
+        <%= image_tag("Slice-5.png", :width=>"50px", :"data-sound"=>"sound5", :class=>"stone") %>
     </div>
 </div>
 <div class="row visible-phone">
     <div class="span7 center">
-        <%= image_tag("Slice-6.png", :width=>"50px") %>
-        <%= image_tag("Slice-7.png", :width=>"50px") %>
-        <%= image_tag("Slice-8.png", :width=>"50px") %>
-        <%= image_tag("Slice-9.png", :width=>"50px") %>
-        <%= image_tag("Slice-10.png", :width=>"50px") %>
+        <%= image_tag("Slice-6.png", :width=>"50px",  :"data-sound"=>"sound6",  :class=>"stone") %>
+        <%= image_tag("Slice-7.png", :width=>"50px",  :"data-sound"=>"sound7",  :class=>"stone") %>
+        <%= image_tag("Slice-8.png", :width=>"50px",  :"data-sound"=>"sound8",  :class=>"stone") %>
+        <%= image_tag("Slice-9.png", :width=>"50px",  :"data-sound"=>"sound9",  :class=>"stone") %>
+        <%= image_tag("Slice-10.png", :width=>"50px", :"data-sound"=>"sound10", :class=>"stone") %>
     </div>
 </div>
 <div class="row visible-phone bottom-med-spacer">
     <div class="span7 center">
-        <%= image_tag("Slice-11.png", :width=>"50px") %>
-        <%= image_tag("Slice-12.png", :width=>"50px") %>
-        <%= image_tag("Slice-13.png", :width=>"50px") %>
-        <%= image_tag("Slice-14.png", :width=>"50px") %>
-        <%= image_tag("Slice-15.png", :width=>"50px") %>
+        <%= image_tag("Slice-11.png", :width=>"50px", :"data-sound"=>"sound11", :class=>"stone") %>
+        <%= image_tag("Slice-12.png", :width=>"50px", :"data-sound"=>"sound12", :class=>"stone") %>
+        <%= image_tag("Slice-13.png", :width=>"50px", :"data-sound"=>"sound13", :class=>"stone") %>
+        <%= image_tag("Slice-14.png", :width=>"50px", :"data-sound"=>"sound14", :class=>"stone") %>
+        <%= image_tag("Slice-15.png", :width=>"50px", :"data-sound"=>"sound15", :class=>"stone") %>
     </div>
 </div>
 
@@ -110,3 +110,20 @@
     </div>
 </div>
 
+<div id="audio">
+    <%= audio_tag("/assets/sound1.mp3",  :id=>"sound1") %>
+    <%= audio_tag("/assets/sound2.mp3",  :id=>"sound2") %>
+    <%= audio_tag("/assets/sound3.mp3",  :id=>"sound3") %>
+    <%= audio_tag("/assets/sound4.mp3",  :id=>"sound4") %>
+    <%= audio_tag("/assets/sound5.mp3",  :id=>"sound5") %>
+    <%= audio_tag("/assets/sound6.mp3",  :id=>"sound6") %>
+    <%= audio_tag("/assets/sound7.mp3",  :id=>"sound7") %>
+    <%= audio_tag("/assets/sound8.mp3",  :id=>"sound8") %>
+    <%= audio_tag("/assets/sound9.mp3",  :id=>"sound9") %>
+    <%= audio_tag("/assets/sound10.mp3", :id=>"sound10") %>
+    <%= audio_tag("/assets/sound11.mp3", :id=>"sound11") %>
+    <%= audio_tag("/assets/sound12.mp3", :id=>"sound12") %>
+    <%= audio_tag("/assets/sound13.mp3", :id=>"sound13") %>
+    <%= audio_tag("/assets/sound14.mp3", :id=>"sound14") %>
+    <%= audio_tag("/assets/sound15.mp3", :id=>"sound15") %>
+</div>
