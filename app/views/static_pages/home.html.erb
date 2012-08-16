@@ -36,6 +36,7 @@
 
 <!-- Stones -->
 <!-- Desktop -->
+<div id="stones">
 <div class="row hidden-phone">
     <div class="span12 center">
         <%= image_tag("Slice-1.png", :"data-sound"=>"sound1", :class=>"stone") %>
@@ -92,7 +93,7 @@
         <%= image_tag("Slice-15.png", :width=>"50px", :"data-sound"=>"sound15", :class=>"stone") %>
     </div>
 </div>
-
+</div>
 
 
 <!-- Text -->
@@ -111,11 +112,22 @@
 </div>
 
 <div id="audio">
-    <%= audio_tag("/assets/sound1.mp3",  :id=>"sound1") %>
-    <%= audio_tag("/assets/sound2.mp3",  :id=>"sound2") %>
-    <%= audio_tag("/assets/sound3.mp3",  :id=>"sound3") %>
-    <%= audio_tag("/assets/sound4.mp3",  :id=>"sound4") %>
-    <%= audio_tag("/assets/sound5.mp3",  :id=>"sound5") %>
+    <audio id="sound1">
+        <source src="/assets/sound1.mp3">
+        <source src="/assets/sound1.ogg">
+    </audio>
+    <audio id="sound2">
+        <source src="/assets/sound2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound3">
+        <source src="/assets/sound3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound4">
+        <source src="/assets/sound4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound5">
+        <source src="/assets/sound5.mp3" type="audio/mp3">
+    </audio>
     <%= audio_tag("/assets/sound6.mp3",  :id=>"sound6") %>
     <%= audio_tag("/assets/sound7.mp3",  :id=>"sound7") %>
     <%= audio_tag("/assets/sound8.mp3",  :id=>"sound8") %>
