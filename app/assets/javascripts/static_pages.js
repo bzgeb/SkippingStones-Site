@@ -7,6 +7,8 @@ $(document).ready(function() {
 //                                              "/assets/" + audio+id + ".m4a";
 //
     $("#stones img").mouseenter(function() {
+        $(this).addClass("hover");
+        console.log(this);
         audio_id = jQuery.attr(this, "data-sound")
         e = $("#"+ audio_id)[0];
         if(Modernizr.audio && e != undefined) {
@@ -15,6 +17,10 @@ $(document).ready(function() {
                                           "/assets/" + audio+id + ".m4a";
             e.play();
         }
+    });
+
+    $("#stones img").mouseleave(function() {
+        $(this).removeClass("hover");
     });
 
     $("#stones img").click(function() {
