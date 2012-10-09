@@ -4,28 +4,40 @@
     <div class="span12 center">
         <%= image_tag("skipping-stones.png") %>
     </div>
+    <div id="stones hidden-phone">
+        <div class="span12 center visible-desktop">
+            <%= image_tag("Slice-1.png", :"data-sound"=>"sound1", :class=>"stone") %>
+            <%= image_tag("Slice-2.png", :"data-sound"=>"sound2", :class=>"stone") %>
+            <%= image_tag("Slice-3.png", :"data-sound"=>"sound3", :class=>"stone") %>
+            <%= image_tag("Slice-4.png", :"data-sound"=>"sound4", :class=>"stone") %>
+            <%= image_tag("Slice-5.png", :"data-sound"=>"sound5", :class=>"stone") %>
+            <%= image_tag("Slice-6.png",  :"data-sound"=>"sound6",  :class=>"stone") %>
+            <%= image_tag("Slice-7.png",  :"data-sound"=>"sound7",  :class=>"stone") %>
+            <%= image_tag("Slice-8.png",  :"data-sound"=>"sound8",  :class=>"stone") %>
+            <%= image_tag("Slice-9.png",  :"data-sound"=>"sound9",  :class=>"stone") %>
+        </div>
+    </div>
 </div>
 
 <!-- Social -->
 <!-- Desktop -->
 <div class="row bottom-large-spacer hidden-phone">
+    <div class="span12 center" style="padding-bottom: 20px">
+        <%= image_tag("screenshot.png") %>
+    </div>
     <div class="span12 center">
-        <div class="row">
-            <div class="span4">
-                <%= image_tag("twitter.png") %>
-            </div>
-            <div class="span4">
-                <%= image_tag("ko-op.png") %>
-            </div>
-            <div class="span4">
-                <%= image_tag("fb.png") %>
-            </div>
-        </div>
+        <%= image_tag("twitter.png") %>
+        <%= image_tag("ko-op.png", :style=>"padding-left:60px; padding-right:60px;") %>
+        <%= image_tag("fb.png") %>
     </div>
 </div>
 
 <!-- Phone -->
 <div class="row bottom-large-spacer visible-phone">
+    <div class="span12 center" style="padding-bottom: 20px">
+        <%= image_tag("screenshot.png") %>
+    </div>
+
     <div class="span12 center">
         <%= image_tag("twitter.png", :width=>"35px") %>
         <%= image_tag("ko-op.png", :width=>"35px", :style=>"margin-left:60px;margin-right:60px") %>
@@ -34,82 +46,13 @@
 </div>
 
 
-<!-- Stones -->
-<!-- Desktop -->
-<div id="stones">
-<div class="row hidden-phone">
-    <div class="span12 center">
-        <%= image_tag("Slice-1.png", :"data-sound"=>"sound1", :class=>"stone") %>
-        <%= image_tag("Slice-2.png", :"data-sound"=>"sound2", :class=>"stone") %>
-        <%= image_tag("Slice-3.png", :"data-sound"=>"sound3", :class=>"stone") %>
-        <%= image_tag("Slice-4.png", :"data-sound"=>"sound4", :class=>"stone") %>
-        <%= image_tag("Slice-5.png", :"data-sound"=>"sound5", :class=>"stone") %>
-    </div>
-</div>
-<div class="row hidden-phone">
-    <div class="span12 center">
-        <%= image_tag("Slice-6.png",  :"data-sound"=>"sound6",  :class=>"stone") %>
-        <%= image_tag("Slice-7.png",  :"data-sound"=>"sound7",  :class=>"stone") %>
-        <%= image_tag("Slice-8.png",  :"data-sound"=>"sound8",  :class=>"stone") %>
-        <%= image_tag("Slice-9.png",  :"data-sound"=>"sound9",  :class=>"stone") %>
-        <%= image_tag("Slice-10.png", :"data-sound"=>"sound10", :class=>"stone") %>
-    </div>
-</div>
-<div class="row hidden-phone bottom-med-spacer">
-    <div class="span12 center">
-        <%= image_tag("Slice-11.png", :"data-sound"=>"sound11", :class=>"stone") %>
-        <%= image_tag("Slice-12.png", :"data-sound"=>"sound12", :class=>"stone") %>
-        <%= image_tag("Slice-13.png", :"data-sound"=>"sound13", :class=>"stone") %>
-        <%= image_tag("Slice-14.png", :"data-sound"=>"sound14", :class=>"stone") %>
-        <%= image_tag("Slice-15.png", :"data-sound"=>"sound15", :class=>"stone") %>
-    </div>
-</div>
-
-<!-- Phone -->
-<div class="row visible-phone">
-    <div class="span7 center">
-        <%= image_tag("Slice-1.png", :width=>"50px", :"data-sound"=>"sound1", :class=>"stone") %>
-        <%= image_tag("Slice-2.png", :width=>"50px", :"data-sound"=>"sound2", :class=>"stone") %>
-        <%= image_tag("Slice-3.png", :width=>"50px", :"data-sound"=>"sound3", :class=>"stone") %>
-        <%= image_tag("Slice-4.png", :width=>"50px", :"data-sound"=>"sound4", :class=>"stone") %>
-        <%= image_tag("Slice-5.png", :width=>"50px", :"data-sound"=>"sound5", :class=>"stone") %>
-    </div>
-</div>
-<div class="row visible-phone">
-    <div class="span7 center">
-        <%= image_tag("Slice-6.png", :width=>"50px",  :"data-sound"=>"sound6",  :class=>"stone") %>
-        <%= image_tag("Slice-7.png", :width=>"50px",  :"data-sound"=>"sound7",  :class=>"stone") %>
-        <%= image_tag("Slice-8.png", :width=>"50px",  :"data-sound"=>"sound8",  :class=>"stone") %>
-        <%= image_tag("Slice-9.png", :width=>"50px",  :"data-sound"=>"sound9",  :class=>"stone") %>
-        <%= image_tag("Slice-10.png", :width=>"50px", :"data-sound"=>"sound10", :class=>"stone") %>
-    </div>
-</div>
-<div class="row visible-phone bottom-med-spacer">
-    <div class="span7 center">
-        <%= image_tag("Slice-11.png", :width=>"50px", :"data-sound"=>"sound11", :class=>"stone") %>
-        <%= image_tag("Slice-12.png", :width=>"50px", :"data-sound"=>"sound12", :class=>"stone") %>
-        <%= image_tag("Slice-13.png", :width=>"50px", :"data-sound"=>"sound13", :class=>"stone") %>
-        <%= image_tag("Slice-14.png", :width=>"50px", :"data-sound"=>"sound14", :class=>"stone") %>
-        <%= image_tag("Slice-15.png", :width=>"50px", :"data-sound"=>"sound15", :class=>"stone") %>
-    </div>
-</div>
-</div>
-
-
 <!-- Text -->
 <div class-"row">
-    <div class="span10 offset1">
+    <div class="span12">
         <p>Skipping Stones is an experimental sound and poetry toy. Players throw stones across a lake and create musical harmonies with each skip of the stone. The game is a study of self reflection, and emotion through turbulent times. Coming soon to iOS.</p>
-        <!--<p>Sound composition by Mars Module. Click below to listen to the Skipping Stones EP.</p>-->
+        <p>Sound composition by Mars Module.</p>
     </div>
 </div>
-
-<!-- Mars Module -->
-<!--<div class="row">
-    <div class="span12">
-        <%= image_tag("mars-module.png") %>
-    </div>
-</div>-->
 
 <div id="audio">
     <audio id="sound1">

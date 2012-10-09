@@ -14,6 +14,9 @@ body {
     color: #000;
     font-family: 'Arimo', Helvetica, sans-serif;
     font-size: 16px;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-position: 52% 0%;
 }
 
 h1 {
@@ -102,3 +105,8 @@ h1 {
 .hover {
     margin-top:-20px;
 }
+
+#stones {
+    padding-top: 10px;
+}
+
